@@ -5,7 +5,11 @@
  */
 
 var app = require('../app');
+<<<<<<< HEAD
 var debug = require('debug')('local-library-website:server');
+=======
+var debug = require('debug')('express-locallibrary-tutorial:server');
+>>>>>>> a3b421b0c8249b35946c94a162dc62141a87bdef
 var http = require('http');
 
 /**
