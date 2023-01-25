@@ -5,11 +5,7 @@
  */
 
 var app = require('../app');
-<<<<<<< HEAD
-var debug = require('debug')('local-library-website:server');
-=======
 var debug = require('debug')('express-locallibrary-tutorial:server');
->>>>>>> a3b421b0c8249b35946c94a162dc62141a87bdef
 var http = require('http');
 
 /**
@@ -71,11 +67,9 @@ function onError(error) {
     case 'EACCES':
       console.error(bind + ' requires elevated privileges');
       process.exit(1);
-      break;
     case 'EADDRINUSE':
       console.error(bind + ' is already in use');
       process.exit(1);
-      break;
     default:
       throw error;
   }
