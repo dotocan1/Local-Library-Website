@@ -14,7 +14,7 @@ var app = express();
 // Set up mongoose connection
 const mongoose = require("mongoose");
 mongoose.set('strictQuery', false);
-const mongoDB = "mongodb+srv://dotocan:$Arn01423@cluster0.lbqhgwv.mongodb.net/library_net?retryWrites=true&w=majority";
+const mongoDB = "mongodb+srv://dotocan:%24Arn01423@cluster0.lbqhgwv.mongodb.net/library_net?retryWrites=true&w=majority";
 
 main().catch(err => console.log(err));
 async function main() {
