@@ -7,7 +7,7 @@ const { body, validationResult } = require("express-validator");
 // Display list of all Genre.
 exports.genre_list = function (req, res, next) {
   Genre.find()
-    .populate("genre")
+    //.populate("genre")
     .exec(function (err, list_genres) {
       if (err) {
         return next(err);
