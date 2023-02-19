@@ -4,6 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+require('dotenv').config()
+console.log(process.env.SECRET_KEY) // remove this after you've confirmed it is working
+
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 const catalogRouter = require("./routes/catalog"); //Import routes for "catalog" area of site
